@@ -6,20 +6,22 @@
   font-size: 16px;
 }
 
-body h1{
-    font-size: 50px;
+body h1 {
+  font-size: 50px;
 }
 
-body h3{
-    font-size: 26px;
+body h2 {
+  font-size: 46px;
 }
 
-body .sub_title{
-    font-size: 16px;
-    color: #dc4f72;
+body h3 {
+  font-size: 26px;
 }
 
-
+body .sub_title {
+  font-size: 16px;
+  color: #dc4f72;
+}
 
 /* navbar */
 .navbar .container {
@@ -37,7 +39,7 @@ body .sub_title{
 }
 
 .navbar .nav-item {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .search-right .fa-solid {
@@ -62,6 +64,7 @@ body .sub_title{
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   /* right: 0; */
   /* transition: opacity 0ms; */
   visibility: hidden;
@@ -97,14 +100,14 @@ body .sub_title{
   opacity: 0.7;
 }
 
-.search-right .btn {
+.search-right .search-popup .btn {
   color: white;
   background-color: #dc4f72;
   border-radius: 0;
-  padding: 0 30px;
+  padding: 10px 30px;
 }
 
-.search-right .btn:hover {
+.search-right .search-popup .btn:hover {
   opacity: 0.7;
 }
 
@@ -143,35 +146,83 @@ body .sub_title{
 }
 
 .home_banner p {
-    color: #5a5a5a;
+  color: #5a5a5a;
 }
-
-
 
 /* home why choose us */
 .home_whychooseus .whychooseus_item p {
-    color: #5a5a5a;
-}
-
-.whychooseus_carousel .col-4 {
-    position: relative;
+  color: #5a5a5a;
 }
 
 .home_whychooseus .whychooseus_item {
-    background-color: #f7f9fc;
-    padding: 50px 30px;
-    transition: 0.5s ease-in;
-    border-radius: 6px;
-    border: 1px solid #f8f9fa;
+  background-color: #f7f9fc;
+  padding: 50px 30px;
+  transition: 0.3s ease-in;
+  border-radius: 6px;
+  border: 1px solid #f8f9fa;
 }
 
-.home_whychooseus .whychooseus_item:hover{
-    position: absolute;
-    transform: translateY(-20px);
-    background-color: white;
+.home_whychooseus .whychooseus_item:hover {
+  transform: translateY(-20px);
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+/* home about content */
+.home_about {
+  background-color: #f7f9fc;
+}
+
+.home_about_text p {
+  color: #5a5a5a;
+}
+
+.home_about .home_about_text .btn {
+  color: white;
+  background-color: #dc4f72;
+  border-radius: 0;
+  padding: 10px 20px;
+}
+
+.home_about .home_about_text .btn:hover {
+  background-color: #d62f58;
+  border-color: #cf2952;
+}
+
+.home_about_img .img-curve {
+  border-radius: 6px;
+}
+
+.home_about_img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transition: 0.3s ease-in-out;
+}
+
+.home_about_img:hover {
+  transform: translateY(-10px);
+}
+
+/* home about number */
+.home_about_number .number-item {
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.home_about_number .number-item:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
 }
 
+.home_about_number .number-item h4 {
+  font-size: 16px;
+}
 
+.home_about_number .number-item p {
+  color: #5a5a5a;
+}
 
-/* home about */
+.home_about_number .counter {
+  color: #dc4f72;
+  font-size: 50px;
+  font-weight: 700;
+}
