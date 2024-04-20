@@ -1,61 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- FontAwesome 6.2.0 CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!-- gg font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- animation -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+  <!-- gg font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
 
-    <!-- my css -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <!-- icon css -->
+  <link rel="stylesheet" href="./js/icons.css">
 
-  <body>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- my css -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <section class="navbar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-warning-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="fa-regular fa-handshake"></i> Masterwork</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                  <li><a class="dropdown-item" href="#">Landing Pages</a></li>
+                  <li><a class="dropdown-item" href="#">404 Page</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="search-right">
+              <a href="#search">
+                <i class="fa-solid fa-magnifying-glass me-2"></i>
+              </a>
+              <div id="search" class="search-overlay">
+                <div class="search-popup">
+                  <form class="d-flex" role="search">
+                    <input class="form-control rounded-start p-3" type="search" placeholder="Enter Keyword"
+                      aria-label="Search" />
+                    <button class="btn rounded-end" type="submit">
+                      Search
+                    </button>
+                  </form>
+                  <a class="close" href="#close">×</a>
+                </div>
+              </div>
+            </div>
+
+            <button class="theme-button text-uppercase fw-bold me-2">
+              schedule a demo
+            </button>
+
+            <div class="mode">
+              <i class="gg-sun"></i>
+              <i class="gg-moon"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- home banner -->
+  <section class="home_banner pt-5">
+    <div class="container">
+      <div class="home_banner_content d-flex justify-content-center align-items-center">
+        <div class="home_banner_text w-100">
+          <h1 class="fw-bold">We Execute Our Ideas <br> From Start to Finish</h1>
+          <p class="mt-3 mb-5">Building a beautiful interactive business for <br> startups and innovative companies.</p>
+          <button class="theme-button text-uppercase">get started</button>
+        </div>
+        <div class="home_banner_img w-100">
+          <img src="./img/main.png" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- home why choose us -->
+  <section class="home_whychooseus text-center mt-5 mb-5">
+    <div class="container">
+      <div class="whychooseus_text mx-auto">
+        <h6 class="sub_title fw-bold">WHY CHOOSE US</h6>
+        <h1 class="fw-bold">Tools for business startup to <br> professional</h1>
+        <p class="mt-2 mb-2">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          Nulla mollis <br> dapibus nunc, ut
+          rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      </div>
+      <div class="whychooseus_carousel">
+        <div class="row mt-5">
+          <div class="col-4 p-3">
+            <div class="whychooseus_item">
+              <a href="" class="text-decoration-none text-black">
+                <img src="./img/s1.png" alt="">
+                <h3 class="mt-3 mb-3 fw-bold">Interactive</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus totam repellendus?
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 p-3">
+            <div class="whychooseus_item">
+              <a href="" class="text-decoration-none text-black">
+                <img src="./img/s2.png" alt="">
+                <h3 class="mt-3 mb-3 fw-bold">Business</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus totam repellendus?
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 p-3">
+            <div class="whychooseus_item">
+              <a href="" class="text-decoration-none text-black">
+                <img src="./img/s3.png" alt="">
+                <h3 class="mt-3 mb-3 fw-bold">Inspiration</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus totam repellendus?
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- home about our company -->
+  <section class="home_about">
+    <div class="container">
+      <div class="home_about_content d-flex justify-content-center">
+        <div class="home_about_text">
+          <h6 class="sub_title fw-bold">ABOUT OUR COMPANY</h6>
+          <h1>The Best Choice For Your Successful Business!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum aliquam doloribus voluptas distinctio nulla suscipit laudantium accusamus, quae perspiciatis.</p>
+          <button class="theme-button">Read More</button>
+        </div>
+        <div class="home_about_img">
+          <img src="./img/about.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- home number -->
+
+  <!-- home true to ourselves -->
+
+  <!-- home QnA -->
+
+  <!-- home feature -->
+
+  <!-- home client testi -->
+
+  <!-- home ready -->
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
 </html>
