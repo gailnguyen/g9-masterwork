@@ -426,3 +426,17 @@ header {
 .home_client_carousel .item_name p {
   font-size: 13px;
 }
+
+
+/* home ready */
+.home_ready {
+  padding: 80px 0;
+}
+
+.home_ready .btn {
+    color: white;
+    background-color: #dc4f72;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
