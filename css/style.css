@@ -323,15 +323,16 @@ header {
 }
 
 .home_feature_tab .nav-tabs .nav-link {
-    color: #2C3038;
-    font-size: 22px;
-    font-weight: 700;
-    border-color: transparent;
-    border-bottom: 3px solid #C1C1C1;
-    width: calc(100% / 3);
+  color: #2c3038;
+  font-size: 22px;
+  font-weight: 700;
+  border-color: transparent;
+  border-bottom: 3px solid #c1c1c1;
+  width: calc(100% / 3);
 }
 
-.home_feature_tab .nav-tabs .nav-link:focus, .nav-tabs .nav-link.active {
+.home_feature_tab .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link.active {
   border: none;
   color: #dc4f72;
   font-weight: 700;
@@ -352,6 +353,76 @@ header {
   transform: translateY(-10px);
 }
 
-
-
 /* home client */
+.home_client {
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.77)),
+    url(../img/b2.jpg);
+  /* background-image: url(../img/b2.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: fit-content;
+}
+
+.home_client_carousel .owl-theme .owl-dots .owl-dot span {
+  width: 40px;
+  height: 5px;
+  margin: 5px 5px;
+  background: white;
+  /* display: block; */
+  /* border: none; */
+  /* -webkit-backface-visibility: visible; */
+  transition: opacity 0.2s ease;
+  /* border-radius: 0; */
+  /* position: relative; */
+}
+
+.home_client_carousel .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #dc4f72;
+}
+
+.home_client_carousel .owl_item_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  /* display: inline-block; */
+  border: 3px solid #dc4f72;
+  overflow: hidden;
+}
+
+.home_client_carousel .owl_item_bg {
+  border-radius: 6px;
+}
+
+.home_client_carousel .owl_item_message {
+  text-align: left;
+  position: relative;
+}
+
+.home_client_carousel .owl_item_message::before {
+  content: "";
+}
+
+.home_client_carousel .owl_item_message i {
+  position: absolute;
+  top: 10ppx;
+  left: -35px;
+  font-size: 35px;
+  color: #2c3038;
+  opacity: 0.2;
+}
+
+.home_client_carousel .owl_item_message p {
+  font-size: 18px;
+}
+
+.home_client_carousel .item_name h4 {
+  font-size: 18px;
+  color: #dc4f72;
+}
+
+.home_client_carousel .item_name p {
+  font-size: 13px;
+}
