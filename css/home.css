@@ -1,0 +1,471 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+body h1 {
+  font-size: 50px;
+}
+
+body h2 {
+  font-size: 46px;
+}
+
+body h3 {
+  font-size: 26px;
+}
+
+body .sub_title {
+  font-size: 16px;
+  color: #dc4f72;
+}
+
+/* navbar */
+header {
+  background-color: white;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .navbar-brand {
+  color: #dc4f72;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.navbar .navbar-brand i {
+  font-size: 26px;
+}
+
+header .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #dc4f72;
+}
+
+header .navbar-nav .nav-link:hover {
+  color: #dc4f72;
+}
+
+header .navbar-nav .nav-link {
+  position: relative;
+}
+
+header .navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 8px;
+  width: 0;
+  height: 2px;
+  background-color: #dc4f72;
+}
+
+header .nav-link:hover::before {
+  color: #dc4f72;
+  width: 30%;
+  transition: all 0.8s;
+}
+
+
+.navbar .nav-item {
+  font-size: 16px;
+}
+
+.search-right .fa-solid {
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  color: #5a5a5a;
+  border: 1px solid rgba(0, 0, 0, 0.108);
+  background-color: #f7f9fc;
+  opacity: 0.7;
+}
+
+.search-right .fa-solid:hover {
+  color: black;
+  opacity: 1;
+}
+
+.search-right .search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* right: 0; */
+  /* transition: opacity 0ms; */
+  visibility: hidden;
+  /* opacity: 0; */
+  /* z-index: 99; */
+  background: #000000ba;
+  /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1); */
+  height: 100%;
+  width: 100%;
+}
+
+.search-right .search-overlay:target {
+  visibility: visible;
+  /* opacity: 1; */
+}
+
+.search-right .search-popup {
+  position: relative;
+  margin: 0 auto;
+  padding: 15px;
+  top: 50%;
+  max-width: 30vw;
+}
+
+.search-right .search-popup .close {
+  position: absolute;
+  right: 20px;
+  top: -50px;
+  transition: all 0.5s;
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.search-right .search-popup .btn {
+  color: white;
+  background-color: #dc4f72;
+  border-radius: 0;
+  padding: 10px 30px;
+}
+
+.search-right .search-popup .btn:hover {
+  opacity: 0.7;
+}
+
+.search-popup .form-control {
+  border-radius: 0;
+}
+
+.theme-button {
+  color: #dc4f72;
+  font-size: 14px;
+  border: 1px solid #dc4f72;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.theme-button:hover {
+  color: white;
+  background-color: #dc4f72;
+}
+
+.mode i.gg-sun {
+  display: none;
+}
+
+/* home banner */
+.home_banner {
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.92)),
+    url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  height: fit-content;
+}
+
+.home_banner p {
+  color: #5a5a5a;
+}
+
+/* home why choose us */
+.home_whychooseus .whychooseus_item p {
+  color: #5a5a5a;
+}
+
+.home_whychooseus .whychooseus_item {
+  background-color: #f7f9fc;
+  padding: 50px 30px;
+  transition: 0.3s ease-in;
+  border-radius: 6px;
+  border: 1px solid #f8f9fa;
+}
+
+.home_whychooseus .whychooseus_item:hover {
+  transform: translateY(-20px);
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+/* home about content */
+.home_about {
+  background-color: #f7f9fc;
+}
+
+.home_about_text p {
+  color: #5a5a5a;
+}
+
+.home_about .home_about_text .btn {
+  color: white;
+  background-color: #dc4f72;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.home_about .home_about_text .btn:hover {
+  background-color: #d62f58;
+  border-color: #cf2952;
+}
+
+.home_about_img .img-curve {
+  border-radius: 6px;
+}
+
+.home_about_img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transition: 0.3s ease-in-out;
+  scale: 0.8;
+}
+
+.home_about_img:hover {
+  transform: translateY(-10px);
+}
+
+/* home about number */
+.home_about_number .number-item {
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.home_about_number .number-item:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+.home_about_number .number-item h4 {
+  font-size: 16px;
+}
+
+.home_about_number .number-item p {
+  color: #5a5a5a;
+}
+
+.home_about_number .counter {
+  color: #dc4f72;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* home true */
+.home_true_bg {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+    url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: fit-content;
+}
+
+.home_true_text {
+  padding: 80px 0;
+}
+
+.home_true_text h2 {
+  font-size: 30px;
+}
+
+.home_true_text .btn {
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.home_true_text .btn:hover {
+  opacity: 0.7;
+}
+
+/* QnA */
+.QnA {
+  background-color: #f7f9fc;
+}
+
+.QnA_general {
+  padding-top: 80px;
+}
+
+.QnA_img .img-curve {
+  border-radius: 6px;
+}
+
+.QnA_img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transition: 0.3s ease-in-out;
+  scale: 0.8;
+  position: sticky;
+  top: 0;
+}
+
+.QnA_img:hover {
+  transform: translateY(-10px);
+}
+
+/* accordion */
+.QnA_detail .accordion-item .accordion-button {
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.QnA_detail .accordion-item {
+  border-radius: 6px;
+}
+
+.QnA_detail .accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+  box-shadow: none;
+}
+
+.QnA_detail .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+/* home feature */
+.home_feature_content {
+  padding: 80px 0;
+  margin: 0 120px;
+}
+
+.home_feature_content p {
+  color: #5a5a5a;
+}
+
+.home_feature_tab .nav-tabs {
+  width: 100%;
+}
+
+.home_feature_tab .nav-tabs .nav-link {
+  color: #2c3038;
+  font-size: 22px;
+  font-weight: 700;
+  border-color: transparent;
+  border-bottom: 3px solid #c1c1c1;
+  width: calc(100% / 3);
+}
+
+.home_feature_tab .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link.active {
+  border: none;
+  color: #dc4f72;
+  font-weight: 700;
+  border-color: transparent;
+  border-bottom: 3px solid #dc4f72;
+}
+
+.tab-content-img .img-curve {
+  border-radius: 6px;
+}
+
+.tab-content-img {
+  transition: 0.3s ease-in-out;
+  scale: 0.85;
+}
+
+.tab-content-img:hover {
+  transform: translateY(-10px);
+}
+
+/* home client */
+.home_client {
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.77)),
+    url(../img/b2.jpg);
+  /* background-image: url(../img/b2.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: fit-content;
+}
+
+.home_client_carousel .owl-theme .owl-dots .owl-dot span {
+  width: 40px;
+  height: 5px;
+  margin: 5px 5px;
+  background: white;
+  /* display: block; */
+  /* border: none; */
+  /* -webkit-backface-visibility: visible; */
+  transition: opacity 0.2s ease;
+  /* border-radius: 0; */
+  /* position: relative; */
+}
+
+.home_client_carousel .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #dc4f72;
+}
+
+.home_client_carousel .owl_item_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  /* display: inline-block; */
+  border: 3px solid #dc4f72;
+  overflow: hidden;
+}
+
+.home_client_carousel .owl_item_bg {
+  border-radius: 6px;
+}
+
+.home_client_carousel .owl_item_message {
+  text-align: left;
+  position: relative;
+}
+
+.home_client_carousel .owl_item_message::before {
+  content: "";
+}
+
+.home_client_carousel .owl_item_message i {
+  position: absolute;
+  top: 10ppx;
+  left: -35px;
+  font-size: 35px;
+  color: #2c3038;
+  opacity: 0.2;
+}
+
+.home_client_carousel .owl_item_message p {
+  font-size: 18px;
+}
+
+.home_client_carousel .item_name h4 {
+  font-size: 18px;
+  color: #dc4f72;
+}
+
+.home_client_carousel .item_name p {
+  font-size: 13px;
+}
+
+
+/* home ready */
+.home_ready {
+  padding: 80px 0;
+}
+
+.home_ready .btn {
+    color: white;
+    background-color: #dc4f72;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
