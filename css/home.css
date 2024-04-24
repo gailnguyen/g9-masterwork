@@ -39,8 +39,13 @@ header {
   font-size: 26px;
 }
 
-header .navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
+
+/* hiệu ứng thẻ nav */
+header .navbar-nav .nav-link {
+  color: #5a5a5a;
+}
+
+header .navbar-nav .nav-link.active {
   color: #dc4f72;
 }
 
@@ -62,16 +67,21 @@ header .navbar-nav .nav-link::before {
   background-color: #dc4f72;
 }
 
-header .nav-link:hover::before {
+header .navbar-nav .nav-link:hover::before {
   color: #dc4f72;
   width: 30%;
   transition: all 0.8s;
 }
 
+
+
 .navbar .nav-item {
   font-size: 16px;
 }
 
+
+
+/* nút search */
 .search-right .fa-solid {
   font-size: 14px;
   height: 40px;
