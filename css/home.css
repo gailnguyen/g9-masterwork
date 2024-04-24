@@ -39,7 +39,8 @@ header {
   font-size: 26px;
 }
 
-header .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+header .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: #dc4f72;
 }
 
@@ -66,7 +67,6 @@ header .nav-link:hover::before {
   width: 30%;
   transition: all 0.8s;
 }
-
 
 .navbar .nav-item {
   font-size: 16px;
@@ -163,6 +163,10 @@ header .nav-link:hover::before {
 .mode i.gg-sun {
   display: none;
 }
+
+
+
+
 
 /* home banner */
 .home_banner {
@@ -456,16 +460,15 @@ header .nav-link:hover::before {
   font-size: 13px;
 }
 
-
 /* home ready */
 .home_ready {
   padding: 80px 0;
 }
 
 .home_ready .btn {
-    color: white;
-    background-color: #dc4f72;
-    border-radius: 3px;
-    padding: 10px 20px;
-    font-size: 14px;
+  color: white;
+  background-color: #dc4f72;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
 }
