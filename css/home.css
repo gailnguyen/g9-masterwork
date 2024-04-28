@@ -39,7 +39,6 @@ header {
   font-size: 26px;
 }
 
-
 /* hiệu ứng thẻ nav */
 header .navbar-nav .nav-link {
   color: #5a5a5a;
@@ -73,13 +72,9 @@ header .navbar-nav .nav-link:hover::before {
   transition: all 0.8s;
 }
 
-
-
 .navbar .nav-item {
   font-size: 16px;
 }
-
-
 
 /* nút search */
 .search-right .fa-solid {
@@ -174,17 +169,12 @@ header .navbar-nav .nav-link:hover::before {
   display: none;
 }
 
-
-
-
-
 /* home banner */
 .home_banner {
   background: linear-gradient(to right, white, rgba(255, 255, 255, 0.92)),
     url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-attachment: fixed; */
   background-size: cover;
   height: fit-content;
 }
@@ -321,7 +311,7 @@ header .navbar-nav .nav-link:hover::before {
 .QnA_img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
   transition: 0.3s ease-in-out;
-  scale: 0.8;
+  scale: 0.9;
   position: sticky;
   top: 0;
 }
@@ -400,7 +390,6 @@ header .navbar-nav .nav-link:hover::before {
 .home_client {
   background: linear-gradient(to right, white, rgba(255, 255, 255, 0.77)),
     url(../img/b2.jpg);
-  /* background-image: url(../img/b2.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -413,12 +402,7 @@ header .navbar-nav .nav-link:hover::before {
   height: 5px;
   margin: 5px 5px;
   background: white;
-  /* display: block; */
-  /* border: none; */
-  /* -webkit-backface-visibility: visible; */
   transition: opacity 0.2s ease;
-  /* border-radius: 0; */
-  /* position: relative; */
 }
 
 .home_client_carousel .owl-theme .owl-dots .owl-dot.active span,
@@ -430,7 +414,6 @@ header .navbar-nav .nav-link:hover::before {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  /* display: inline-block; */
   border: 3px solid #dc4f72;
   overflow: hidden;
 }
@@ -481,4 +464,95 @@ header .navbar-nav .nav-link:hover::before {
   border-radius: 3px;
   padding: 10px 20px;
   font-size: 14px;
+}
+
+/* footer */
+footer {
+  background-color: #f7f9fc;
+  height: fit-content;
+  padding: 30px 0;
+}
+
+footer .category {
+  padding: 40px 0;
+}
+
+footer .category h3 {
+  font-size: 22px;
+  color: #2c3038;
+}
+
+footer .category h6 {
+  font-size: 18px;
+  color: #656f7b;
+}
+
+footer .category ul li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer a,
+.footer p {
+  color: #656f7b;
+}
+
+.footer .footer_form {
+  border-radius: 6px;
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+}
+
+.footer .footer_form form input {
+  background-color: #f7f9fc;
+  padding: 12px 20px;
+  width: 70%;
+  border: none;
+  border-radius: 6px;
+  color: #2c3038;
+  font-weight: 600;
+}
+
+.footer .footer_form form .btn {
+  color: white;
+  background-color: #dc4f72;
+  border-radius: 3px;
+  padding: 12px 30px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.footer .copyrights a {
+  color: #2c3038;
+  transition: all 0.5s;
+}
+
+.footer .copyrights a:hover {
+  color: #dc4f72;
+}
+
+
+/* backtotop */
+.backtotop.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.backtotop.cd-top--fade-out {
+  opacity: 0.7;
+}
+
+.backtotop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  background-color: #dc4f72;
+  opacity: 0;
+  visibility: hidden;
 }
