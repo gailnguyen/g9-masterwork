@@ -7,6 +7,24 @@
 }
 
 
+body h1 {
+  font-size: 50px;
+}
+
+body h2 {
+  font-size: 46px;
+}
+
+body h3 {
+  font-size: 26px;
+}
+
+body .sub_title {
+  font-size: 16px;
+  color: #dc4f72;
+}
+
+
 /* navbar */
 header {
   background-color: white;
@@ -144,4 +162,142 @@ header .navbar-nav .nav-link:hover::before {
 
 .mode i.gg-sun {
   display: none;
+}
+
+
+/* our services */
+.services {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.btn {
+  color: white;
+  background-color: #dc4f72;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.our_services_text h3 {
+  color: #B7B8B7;
+}
+
+.our_services_type a img {
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+  background-color: #F7F9FC;
+}
+
+/* best products */
+.our_product{
+  padding: 50px 0;
+  background-color: #F7F9FC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+  background-color: #f7f9fc;
+  height: fit-content;
+  padding: 30px 0;
+}
+
+footer .category {
+  padding: 40px 0;
+}
+
+footer .category h3 {
+  font-size: 22px;
+  color: #2c3038;
+}
+
+footer .category h6 {
+  font-size: 18px;
+  color: #656f7b;
+}
+
+footer .category ul li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer a,
+.footer p {
+  color: #656f7b;
+}
+
+.footer .footer_form {
+  border-radius: 6px;
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+}
+
+.footer .footer_form form input {
+  background-color: #f7f9fc;
+  padding: 12px 20px;
+  width: 70%;
+  border: none;
+  border-radius: 6px;
+  color: #2c3038;
+  font-weight: 600;
+}
+
+.footer .footer_form form .btn {
+  color: white;
+  background-color: #dc4f72;
+  border-radius: 3px;
+  padding: 12px 30px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.footer .copyrights a {
+  color: #2c3038;
+  transition: all 0.5s;
+}
+
+.footer .copyrights a:hover {
+  color: #dc4f72;
+}
+
+
+/* backtotop */
+.backtotop.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.backtotop.cd-top--fade-out {
+  opacity: 0.7;
+}
+
+.backtotop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  background-color: #dc4f72;
+  opacity: 0;
+  visibility: hidden;
 }
