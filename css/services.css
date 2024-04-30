@@ -31,6 +31,10 @@ header {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
 
+.navbar .container-fluid {
+  padding: 0px;
+}
+
 .navbar .navbar-brand {
   color: #dc4f72;
   font-weight: 700;
@@ -44,6 +48,7 @@ header {
 /* hiệu ứng thẻ nav */
 header .navbar-nav .nav-link {
   color: #5a5a5a;
+  position: relative;
 }
 
 header .navbar-nav .nav-link.active {
@@ -54,7 +59,7 @@ header .navbar-nav .nav-link:hover {
   color: #dc4f72;
 }
 
-header .navbar-nav .nav-link {
+header .navbar-nav .dropdown-item {
   position: relative;
 }
 
@@ -71,6 +76,30 @@ header .navbar-nav .nav-link::before {
 header .navbar-nav .nav-link:hover::before {
   color: #dc4f72;
   width: 30%;
+  transition: all 0.8s;
+}
+
+header .navbar-nav .dropdown-menu {
+  padding: 10px 0;
+}
+
+header .navbar-nav .dropdown-item {
+  padding: 6px 16px;
+}
+
+header .navbar-nav .dropdown-item::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+  width: 0;
+  height: 2px;
+  background-color: #dc4f72;
+}
+
+header .navbar-nav .dropdown-item:hover::before {
+  color: #dc4f72;
+  width: 15%;
   transition: all 0.8s;
 }
 
@@ -164,6 +193,24 @@ header .navbar-nav .nav-link:hover::before {
   display: none;
 }
 
+/* breadcrumb */
+.breadcrum {
+  margin: 75px 0 0 0;
+  padding: 15px;
+  background-color: #F7F9FC;
+}
+.breadcrum ol {
+  margin-bottom: 0
+}
+
+.breadcrum .breadcrumb li a {
+  color: #dc4f72;
+  font-size: 14px;
+}
+
+.breadcrum .breadcrumb li {
+  font-size: 14px;
+}
 
 /* our services */
 .services {
@@ -177,6 +224,7 @@ header .navbar-nav .nav-link:hover::before {
   border-radius: 3px;
   padding: 10px 20px;
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .our_services .btn:hover {
@@ -426,4 +474,15 @@ color: #5a5a5a;
 
 .featured_services_content img:hover {
   transform: translateY(-10px);
+}
+
+
+@media screen and (max-width: 992px) {
+  footer .copyrights p {
+    text-align: center;
+  }
+
+  footer .copyrights .social ul {
+    justify-content: center !important;
+  }
 }
