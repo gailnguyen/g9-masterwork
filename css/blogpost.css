@@ -484,3 +484,14 @@ footer .category ul li {
   opacity: 0;
   visibility: hidden;
 }
+
+
+@media screen and (max-width: 992px) {
+  footer .copyrights p {
+    text-align: center;
+  }
+
+  footer .copyrights .social ul {
+    justify-content: center !important;
+  }
+}

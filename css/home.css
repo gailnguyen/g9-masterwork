@@ -202,6 +202,7 @@ header .navbar-nav .dropdown-item:hover::before {
   background-position: center;
   background-size: cover;
   height: fit-content;
+  padding-top: 100px;
 }
 
 .home_banner p {
@@ -580,4 +581,16 @@ footer .category ul li {
   background-color: #dc4f72;
   opacity: 0;
   visibility: hidden;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  footer .copyrights p {
+    text-align: center;
+  }
+
+  footer .copyrights .social ul {
+    justify-content: center !important;
+  }
 }
