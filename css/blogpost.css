@@ -8,9 +8,13 @@
 
 
 /* navbar */
-header {
+.header {
   background-color: white;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .container-fluid {
+  padding: 0px;
 }
 
 .navbar .navbar-brand {
@@ -144,4 +148,20 @@ header .navbar-nav .nav-link:hover::before {
 
 .mode i.gg-sun {
   display: none;
+}
+
+
+/* breadcrumb */
+.breadcrum {
+  margin: 75px 0 0 0;
+  padding: 10px;
+  background-color: #F7F9FC;
+}
+.breadcrum ol {
+  margin-bottom: 0
+}
+
+.breadcrum .breadcrumb li a {
+  color: #dc4f72;
+  font-size: 14px;
 }
