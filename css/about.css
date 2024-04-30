@@ -339,8 +339,8 @@ margin-top: 80px;
 
 }
 
-.page_grapper{
-  /* padding-left: 200px; */
+.page_grapper .container {
+  padding: 0 15px;
 
 }
 
