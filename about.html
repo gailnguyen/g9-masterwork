@@ -606,130 +606,93 @@
 
   <body>
     <!-- navbar -->
-    <header class="fixed-top pt-2 pb-2">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg container">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <i class="fa-regular fa-handshake"></i> Masterwork</a
-            >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-              <ul
-                class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
-                style="--bs-scroll-height: 100px"
-              >
-                <li class="nav-item">
-                  <a
-                    class="nav-link ms-2 me-2"
-                    aria-current="page"
-                    href="./home.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-2 me-2 active" href="./about.html"
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-2 me-2" href="./services.html"
-                    >Services</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link ms-2 me-2 dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Pages
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="./blogpost.html"
-                        >Blog Posts</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./landingpage.html"
-                        >Landing Pages</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="./pagenotfound.html"
-                        >404 Page</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-2 me-2" href="./contact.html"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-              <!-- Nút Share -->
-              <div class="search-right HeaderSearch mr-lg-3">
-                <a href="#search" class="search-search" title="search"
-                  ><span class="fa fa-search" aria-hidden="true"></span
-                ></a>
-                <div id="search" class="pop-overlay">
-                  <div class="popup">
-                    <form
-                      action="https://wp.w3layouts.com/masterwork/"
-                      method="GET"
-                      class="search-box d-sm-flex"
-                    >
-                      <input
-                        type="search"
-                        placeholder="Enter Keyword"
-                        name="s"
-                        required="required"
-                        autofocus=""
-                      />
-                      <button type="submit" class="btn">Search</button>
-                    </form>
-                    <a class="close" href="#close">×</a>
+    <header>
+      <div class="header fixed-top pt-3 pb-3">
+        <div class="">
+          <nav class="navbar navbar-expand-lg container">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="fa-regular fa-handshake"></i> Masterwork</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                  <li class="nav-item">
+                    <a class="nav-link ms-2 me-2" aria-current="page" href="./home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-2 me-2 active" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-2 me-2" href="./services.html">Services</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link ms-2 me-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="./blogpost.html">Blog Posts</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./landingpage.html">Landing Pages</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./pagenotfound.html">404 Page</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-2 me-2" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+                <!-- Nút Share -->
+                <div class="search-right HeaderSearch mr-lg-3">
+                  <a href="#search" class="search-search" title="search"><span class="fa fa-search"
+                      aria-hidden="true"></span></a>
+                  <div id="search" class="pop-overlay">
+                    <div class="popup">
+                      <form action="https://wp.w3layouts.com/masterwork/" method="GET" class="search-box d-sm-flex">
+                        <input type="search" placeholder="Enter Keyword" name="s" required="required" autofocus="" />
+                        <button type="submit" class="btn">Search</button>
+                      </form>
+                      <a class="close" href="#close">×</a>
+                    </div>
+                  </div>
+                  <!-- <div class="buttons mt-5 sche_button">
+                          <a href="#url" class="btn btn-outline-primary mr-2">
+                          SCHEDULE A DEMO</a>
+                          
+                        </div> -->
+                </div>
+                <!--  SCHEDULE  -->
+                <div class="posi_sche">
+                  <div class="buttons sche_button">
+                    <a href="#url" class="btn btn-outline-primary mr-2">
+                      SCHEDULE A DEMO</a>
                   </div>
                 </div>
-                <!-- <div class="buttons mt-5 sche_button">
-                  <a href="#url" class="btn btn-outline-primary mr-2">
-                  SCHEDULE A DEMO</a>
-                  
-                </div> -->
-              </div>
-              <!--  SCHEDULE  -->
-              <div class="posi_sche">
-                <div class="buttons mt-4 sche_button">
-                  <a href="#url" class="btn btn-outline-primary mr-2">
-                  SCHEDULE A DEMO</a>
+
+        
+                <div class="mode">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
                 </div>
               </div>
-              <div class="mode">
-                <i class="gg-sun"></i>
-                <i class="gg-moon"></i>
-              </div>
             </div>
-          </div>
-        </nav>
-        <!-- <div class="page_grapper">
+          </nav>
+        </div>
+        
+      </div>
+      <div class="page_grapper">
+        <div class="container">
           <a class="back_home" href="./home.html">Home</a>
           <i class="fa-solid fa-angles-right"></i>
           <span> About Page</span>
-        </div> -->
+        </div>
       </div>
       <!-- - -->
     </header>
@@ -768,11 +731,11 @@
     </div>   -->
     <!-- About Us -->
     <section class="about_us">
-      <div class="page_grapper">
+      <!-- <div class="page_grapper">
         <a class="back_home" href="./home.html">Home</a>
         <i class="fa-solid fa-angles-right"></i>
         <span> About Page</span>
-      </div>
+      </div> -->
       <div class="container">
         <div class="about">
           <h1>About Us</h1>
@@ -1356,7 +1319,6 @@
     <!-- footer -->
     
       <footer>
-        
         <section class="w3l-footer">
           <div class="w3l-footer-16-main py-5">
             <div class="container MasterFooter">
