@@ -95,7 +95,7 @@ header .navbar-nav .dropdown-item::before {
   width: 0;
   height: 2px;
   background-color: #dc4f72;
-}
+} 
 
 header .navbar-nav .dropdown-item:hover::before {
   color: #dc4f72;
