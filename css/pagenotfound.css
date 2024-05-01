@@ -127,6 +127,12 @@ header .navbar-nav .nav-link:hover::before {
   border-radius: 0;
 }
 
+.search-overlay .search-popup button{
+  width: 150px;
+  height: 58px;
+
+}
+
 .theme-button {
   color: #dc4f72;
   font-size: 14px;
