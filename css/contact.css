@@ -6,6 +6,22 @@
   font-size: 16px;
 }
 
+body h1 {
+  font-size: 50px;
+}
+
+body h2 {
+  font-size: 46px;
+}
+
+body h3 {
+  font-size: 26px;
+}
+
+body .sub_title {
+  font-size: 16px;
+  color: #dc4f72;
+}
 
 /* navbar */
 header {
