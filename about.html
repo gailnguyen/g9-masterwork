@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>About page – MasterWork – Corporate Category Website WordPress Theme</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -605,6 +605,7 @@
   </head>
 
   <body>
+
     <!-- navbar -->
     <header>
       <div class="header fixed-top pt-2 pb-2">
@@ -632,70 +633,67 @@
                     <a class="nav-link ms-2 me-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                       aria-expanded="false">
                       Pages
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./blogpost.html">Blog Posts</a></li>
+                        <li><a class="dropdown-item" href="./landingpage.html">Landing Pages</a></li>
+                        <li><a class="dropdown-item" href="./pagenotfound.html">404 Page</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link ms-2 me-2" href="./contact.html">Contact</a>
+                    </li>
+                  </ul>
+        
+                  <div class="search-right">
+                    <a href="#search">
+                      <i class="fa-solid fa-magnifying-glass me-2"></i>
                     </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="./blogpost.html">Blog Posts</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="./landingpage.html">Landing Pages</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="./pagenotfound.html">404 Page</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link ms-2 me-2" href="./contact.html">Contact</a>
-                  </li>
-                </ul>
-                <!-- Nút Share -->
-                <div class="search-right HeaderSearch mr-lg-3">
-                  <a href="#search" class="search-search" title="search"><span class="fa fa-search"
-                      aria-hidden="true"></span></a>
-                  <div id="search" class="pop-overlay">
-                    <div class="popup">
-                      <form action="https://wp.w3layouts.com/masterwork/" method="GET" class="search-box d-sm-flex">
-                        <input type="search" placeholder="Enter Keyword" name="s" required="required" autofocus="" />
-                        <button type="submit" class="btn">Search</button>
-                      </form>
-                      <a class="close" href="#close">×</a>
+                    <div id="search" class="search-overlay">
+                      <div class="search-popup">
+                        <form class="d-flex" role="search">
+                          <input class="form-control rounded-start p-3" type="search" placeholder="Enter Keyword"
+                            aria-label="Search" />
+                          <button class="btn rounded-end" type="submit">
+                            Search
+                          </button>
+                        </form>
+                        <a class="close" href="#close">×</a>
+                      </div>
                     </div>
                   </div>
-                  <!-- <div class="buttons mt-5 sche_button">
-                          <a href="#url" class="btn btn-outline-primary mr-2">
-                          SCHEDULE A DEMO</a>
-                          
-                        </div> -->
-                </div>
-                <!--  SCHEDULE  -->
-                <div class="posi_sche">
-                  <div class="buttons sche_button">
-                    <a href="#url" class="btn btn-outline-primary mr-2">
-                      SCHEDULE A DEMO</a>
+        
+                  <button class="theme-button text-uppercase fw-bold me-2">
+                    schedule a demo
+                  </button>
+        
+                  <div class="mode">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
                   </div>
                 </div>
-
-        
-                <div class="mode">
-                  <i class="gg-sun"></i>
-                  <i class="gg-moon"></i>
-                </div>
               </div>
-            </div>
-          </nav>
-        </div>
-        
-      </div>
-    
-    </header>
-          <div class="page_grapper">
-            <div class="container">
-              <a class="back_home" href="./home.html">Home</a>
-              <i class="fa-solid fa-angles-right"></i>
-              <span> About Page</span>
-            </div>
+            </nav>
           </div>
+        </header>
+        
+        <!-- breadcrumb -->
+        <div class="breadcrum">
+          <div class="container">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About</li>
+              </ol>
+            </nav>
+          </div>
+        
+        </div>
+
+
+
+
+
     <!-- thanh side bar -->
     <!-- <div class="pull-right-demo-bar toggle-right-sidebar">
       <span class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"></span>
@@ -741,7 +739,7 @@
           <h1>About Us</h1>
         </div>
         <div class="row align-items-start">
-          <div class="col">
+          <div class="col-12 col-lg-6">
             <h2 class="row">
               The Best Choice For Your <br />
               Successful Business!
@@ -771,31 +769,31 @@
               </li>
             </ul>
           </div>
-          <div class="col img_tree">
+          <div class="col-12 col-lg-6 img_tree">
             <img src="./img/tree.jpg" alt="" />
           </div>
         </div>
 
         <!-- History -->
         <div class="row align-items-start our_history">
-          <div class="col box_item33">
-            <h5>Our History 1795</h5>
+          <div class="col-12 col-lg-6 col-xl-4">
+            <h5 class="fw-bold mb-3">Our History 1795</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud.
             </p>
           </div>
-          <div class="col box_item33">
-            <h5>The power of business</h5>
+          <div class="col-12 col-lg-6 col-xl-4">
+            <h5 class="fw-bold mb-3">The power of business</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud.
             </p>
           </div>
-          <div class="col box_item33">
-            <h5>120 Customer service</h5>
+          <div class="col-12 col-lg-6 col-xl-4">
+            <h5 class="fw-bold mb-3">120 Customer service</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -1158,7 +1156,7 @@
                             class="twitter">
                             <span class="fa fa-twitter" aria-hidden="true"></span>
                         </a>
-                                        </div>
+                                        
                 </div>
               </div>
             </div>
