@@ -355,6 +355,7 @@ footer .category ul li {
   border-radius: 6px;
   color: #2c3038;
   font-weight: 600;
+  outline: none;
 }
 
 .footer .footer_form form .btn {
@@ -371,7 +372,7 @@ footer .category ul li {
   transition: all 0.5s;
 }
 
-.footer .copyrights a:hover {
+.footer a:hover {
   color: #dc4f72;
 }
 
