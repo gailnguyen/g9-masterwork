@@ -14,7 +14,7 @@ header {
 }
 
 .navbar .container-fluid {
-  padding: 0px;
+  /* padding: 0px; */
 }
 
 .navbar .navbar-brand {
@@ -202,10 +202,11 @@ header .navbar-nav .dropdown-item:hover::before {
 }
 
 #post1 .label a {
-    padding: 3px 10px;
+    padding: 4px 12px;
     background-color: #FCDFE4;
     border-radius: 15px;
     color: #dc4f72;
+    font-size: 14px;
 }
 
 
@@ -273,8 +274,13 @@ header .navbar-nav .dropdown-item:hover::before {
     font-weight: 600;
 }
 
+
+#post1 .post-navigation, #post1 .comments-area {
+  width: 70%;
+}
+
 #post1 .comment-respond textarea, input {
-    width: 70%;
+    width: 100%;
     border-radius: 6px;
     padding: 10px;
     margin: 5px 0;
